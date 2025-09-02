@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Numbers Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор досконалих чисел</h1>
+        
+        <div class="task">
+            <h2>Що таке досконале число?</h2>
+            <p>Досконале число - це додатне ціле число, яке дорівнює сумі всіх своїх власних дільників (крім самого себе).</p>
+            <p><strong>Приклад:</strong> 6 = 1 + 2 + 3 (дільники числа 6: 1, 2, 3)</p>
+        </div>
+        
+        <div class="task">
+            <h2>Перевірка одного числа</h2>
+            <button onclick="checkSingleNumber()">Перевірити число</button>
+            <div id="single-result" class="result"></div>
+        </div>
+        
+        <div class="task">
+            <h2>Пошук досконалих чисел у діапазоні</h2>
+            <button onclick="findInRange()">Знайти в діапазоні</button>
+            <div id="range-result" class="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
