@@ -18,12 +18,22 @@
         
         <div class="task">
             <h2>Перевірка одного числа</h2>
+            <div class="input-group">
+                <label for="single-input">Введіть число для перевірки:</label>
+                <input type="number" id="single-input" placeholder="Наприклад: 6" min="1">
+            </div>
             <button onclick="checkSingleNumber()">Перевірити число</button>
             <div id="single-result" class="result"></div>
         </div>
         
         <div class="task">
             <h2>Пошук досконалих чисел у діапазоні</h2>
+            <div class="input-group">
+                <label for="min-input">Мінімальне значення:</label>
+                <input type="number" id="min-input" placeholder="Від" min="1">
+                <label for="max-input">Максимальне значення:</label>
+                <input type="number" id="max-input" placeholder="До" min="1">
+            </div>
             <button onclick="findInRange()">Знайти в діапазоні</button>
             <div id="range-result" class="result"></div>
         </div>

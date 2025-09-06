@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #8948ab 0%, #a24b6f 100%);
     min-height: 100vh;
     color: white;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 button {
-    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    background: linear-gradient(45deg, #b9780f, #ee5a24);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -49,4 +49,35 @@ button:hover {
     margin: 5px 0;
     border-radius: 5px;
     border-left: 3px solid #2ecc71;
+}
+
+.input-group {
+    margin: 15px 0;
+}
+
+.input-group label {
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+}
+
+.input-group input {
+    padding: 8px 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 5px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.input-group input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #e9bb16;
+    box-shadow: 0 0 5px rgba(233, 187, 22, 0.5);
 }

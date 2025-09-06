@@ -35,7 +35,7 @@ function getDivisors(num) {
 }
 
 function checkSingleNumber() {
-    const number = parseInt(prompt("Введіть число для перевірки:"));
+    const number = parseInt(document.getElementById('single-input').value);
     
     if (isNaN(number) || number <= 0) {
         document.getElementById('single-result').innerHTML = 
@@ -52,13 +52,13 @@ function checkSingleNumber() {
         <p><strong>Дільники:</strong> ${divisors.join(', ')}</p>
         <p><strong>Сума дільників:</strong> ${sumOfDivisors}</p>
         <p><strong>Результат:</strong> ${number} ${isPerfect ? 'є' : 'не є'} досконалим числом</p>
-        ${isPerfect ? '<div class="perfect-number">✅ Це досконале число!</div>' : ''}
+        ${isPerfect ? '<div class="perfect-number">✅ Це досконале число!</div>' : '❌️ Це не досконале число!'}
     `;
 }
 
 function findInRange() {
-    const min = parseInt(prompt("Введіть мінімальне значення діапазону:"));
-    const max = parseInt(prompt("Введіть максимальне значення діапазону:"));
+    const min = parseInt(document.getElementById('min-input').value);
+    const max = parseInt(document.getElementById('max-input').value);
     
     if (isNaN(min) || isNaN(max) || min <= 0 || max <= 0 || min > max) {
         document.getElementById('range-result').innerHTML = 
