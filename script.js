@@ -52,7 +52,7 @@ function checkSingleNumber() {
         <p><strong>Дільники:</strong> ${divisors.join(', ')}</p>
         <p><strong>Сума дільників:</strong> ${sumOfDivisors}</p>
         <p><strong>Результат:</strong> ${number} ${isPerfect ? 'є' : 'не є'} досконалим числом</p>
-        ${isPerfect ? '<div class="perfect-number">✅ Це досконале число!</div>' : '❌️ Це не досконале число!'}
+        ${isPerfect ? '<div class="perfect-number response-number">✅ Це досконале число!</div>' : '<div class="wrong-number response-number">❌️ Це не досконале число!</div>'}
     `;
 }
 

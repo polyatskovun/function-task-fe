@@ -43,14 +43,20 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.perfect-number {
-    background: rgba(46, 204, 113, 0.3);
+.response-number{
     padding: 8px;
     margin: 5px 0;
     border-radius: 5px;
+}
+.perfect-number {
+    background: rgba(46, 204, 113, 0.3);
     border-left: 3px solid #2ecc71;
 }
 
+.wrong-number {
+    background: rgba(231, 76, 60, 0.3);
+    border-left: 3px solid #e74c3c;
+}
 .input-group {
     margin: 15px 0;
 }
